@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Al Baraa Business Men Services | Qasemia, Sharjah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4faf6;--card:#fff;--ink:#12261a;--mute:#4d6656;--g:#0b7a3e;--g2:#075c2e;--line:#cfe5d7;--soft:#e2f3e8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a12;--card:#14261a;--ink:#e8f5ec;--mute:#9bb8a5;--g:#2fc46f;--g2:#1f9e55;--line:#25402d;--soft:#193323}}
+:root[data-theme="dark"]{--bg:#0d1a12;--card:#14261a;--ink:#e8f5ec;--mute:#9bb8a5;--g:#2fc46f;--g2:#1f9e55;--line:#25402d;--soft:#193323}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+header{background:var(--g2);color:#fff}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.brand{font-weight:800;font-size:1.15rem}
+.lang{border:1px solid #ffffff88;background:transparent;color:#fff;border-radius:8px;padding:5px 14px;font:inherit;cursor:pointer}
+.hero{padding:34px 0 46px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;margin:0 0 10px;font-weight:800}
+.hero p{max-width:34em;margin:0 0 22px;color:#d8f0e0;font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#053b1b;font-weight:800;padding:12px 22px;border-radius:10px;border:0;font:inherit;font-weight:800;cursor:pointer}
+.btn:focus-visible,.lang:focus-visible,.card a:focus-visible{outline:3px solid #ffd54a;outline-offset:2px}
+.btn.o{background:transparent;color:#fff;border:2px solid #ffffffaa;margin-inline-start:8px}
+h2{font-size:1.6rem;margin:38px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.card h3{margin:0;font-size:1.05rem}
+.card p{margin:0;color:var(--mute);font-size:.92rem;flex:1}
+.price{font-size:1.5rem;font-weight:800;color:var(--g)}
+.price small{font-size:.85rem;font-weight:600;color:var(--mute)}
+.card a{margin-top:6px;color:var(--g);font-weight:800}
+.ask{font-size:1rem;font-weight:800;color:var(--mute)}
+.info{background:var(--soft);border-radius:12px;padding:20px;display:grid;gap:8px}
+.info b{color:var(--g)}
+footer{margin-top:40px;background:var(--g2);color:#d8f0e0;text-align:center;padding:18px;font-size:.9rem}
+.fab{position:fixed;inset-inline-end:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9}
+@media(max-width:520px){.btn.o{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <div class="bar"><span class="brand" data-i="brand">Al Baraa Business Men Services</span><button class="lang" id="lang" aria-label="Language">العربية</button></div>
+ <div class="hero">
+  <h1 data-i="h1">CVs, passports, fines and documents. Done fast.</h1>
+  <p data-i="sub">Your typing and document services shop in Qasemia, Sharjah. We also work online: send us your files on WhatsApp.</p>
+  <a class="btn" id="wa1" target="_blank" rel="noopener" data-i="cta">Chat on WhatsApp</a>
+  <a class="btn o" href="tel:+971562337409" data-i="call">Call 056 233 7409</a>
+ </div>
+</div></header>
+
+<main class="wrap">
+ <h2 data-i="ph">Services and prices</h2>
+ <div class="grid" id="grid"></div>
+
+ <h2 data-i="ih">Visit or message us</h2>
+ <div class="info">
+  <div><b data-i="shop">Shop</b>: <span data-i="shopn">Al Baraa Business Men Services</span></div>
+  <div><b data-i="addr">Address</b>: <span data-i="addrv">Shop, Al Nad Street, Qasemia, Sharjah</span></div>
+  <div><b data-i="wa">WhatsApp / Phone</b>: <a href="tel:+971562337409" dir="ltr">056 233 7409</a></div>
+  <div data-i="online">Online work available: send your documents on WhatsApp and get the finished file back the same way.</div>
+ </div>
+</main>
+
+<footer><span data-i="foot">Al Baraa Business Men Services, Al Nad Street, Qasemia, Sharjah</span></footer>
+<a class="btn fab" id="wa2" target="_blank" rel="noopener" data-i="cta">Chat on WhatsApp</a>
+
+<script>
+var N="971562337409";
+var S=[
+ {en:["Pakistani Passport Apply","We fill and submit your Pakistani passport application."],ar:["تقديم جواز سفر باكستاني","نعبئ ونقدم طلب جواز السفر الباكستاني."],p:80},
+ {en:["Indian Passport Form","Indian passport form filled correctly."],ar:["نموذج جواز سفر هندي","تعبئة نموذج جواز السفر الهندي بشكل صحيح."],p:15},
+ {en:["CV Making","A clean, professional CV made for your job."],ar:["إعداد سيرة ذاتية","سيرة ذاتية احترافية مناسبة لوظيفتك."],p:10},
+ {en:["Photo Editing and Cutting","Background removal, cutting, passport-size photos and retouching."],ar:["تعديل وقص الصور","إزالة الخلفية والقص وصور الجواز والتنقيح."],p:5},
+ {en:["PDF Edit","Edit text, merge, split or fix any PDF."],ar:["تعديل ملفات PDF","تعديل النصوص أو دمج أو تقسيم أي ملف PDF."],p:8},
+ {en:["UAE Fines Check","Check traffic and other UAE fines."],ar:["الاستعلام عن المخالفات","الاستعلام عن المخالفات المرورية وغيرها في الإمارات."],p:10},
+ {en:["Bills and Invoices","Bills and invoices ready to print or send."],ar:["الفواتير","فواتير جاهزة للطباعة أو الإرسال."],p:10},
+ {en:["Hotel and Restaurant Menu","Menu design ready to print."],ar:["تصميم قوائم الطعام","تصميم قائمة طعام للفنادق والمطاعم جاهزة للطباعة."],p:"20 - 100"},
+ {en:["Typing (English and Arabic)","Letters, applications and any document typed neatly."],ar:["طباعة مستندات (عربي وإنجليزي)","طباعة الرسائل والطلبات وأي مستند بشكل مرتب."]},
+ {en:["Print, Copy and Scan","Colour and black-and-white printing, photocopy and scanning."],ar:["طباعة وتصوير ومسح ضوئي","طباعة ملونة وأبيض وأسود وتصوير مستندات ومسح ضوئي."]},
+ {en:["Video Editing","Short videos, reels and ads edited and ready to post."],ar:["مونتاج فيديو","مونتاج فيديوهات قصيرة وإعلانات جاهزة للنشر."]},
+ {en:["Logo, Flyer and Card Design","Logos, flyers, visiting cards and posters for your business."],ar:["تصميم شعارات وبروشورات وبطاقات","شعارات وبروشورات وكروت أعمال وملصقات لنشاطك."]},
+ {en:["English and Arabic Translation","Simple document translation between English and Arabic."],ar:["ترجمة عربي وإنجليزي","ترجمة مستندات بسيطة بين العربية والإنجليزية."]}
+];
+var T={
+ en:{brand:"Al Baraa Business Men Services",h1:"CVs, passports, fines and documents. Done fast.",sub:"Your typing and document services shop in Qasemia, Sharjah. We also work online: send us your files on WhatsApp.",cta:"Chat on WhatsApp",call:"Call 056 233 7409",ph:"Services and prices",ih:"Visit or message us",shop:"Shop",shopn:"Al Baraa Business Men Services",addr:"Address",addrv:"Shop, Al Nad Street, Qasemia, Sharjah",wa:"WhatsApp / Phone",online:"Online work available: send your documents on WhatsApp and get the finished file back the same way.",foot:"Al Baraa Business Men Services, Al Nad Street, Qasemia, Sharjah",ask:"Ask for price",order:"Order on WhatsApp",aed:"AED",msg:"Hello Al Baraa, I need: ",hi:"Hello Al Baraa, I want to ask about your services.",btn:"العربية"},
+ ar:{brand:"البراء لخدمات رجال الأعمال - خدمات",h1:"سير ذاتية، جوازات، مخالفات ومعاملات. بسرعة.",sub:"مكتبك لخدمات الطباعة والمعاملات في القاسمية، الشارقة. نعمل أيضاً عن بُعد: أرسل ملفاتك عبر واتساب.",cta:"تواصل عبر واتساب",call:"اتصل 056 233 7409",ph:"الخدمات والأسعار",ih:"زرنا أو راسلنا",shop:"المحل",shopn:"البراء لخدمات رجال الأعمال - خدمات",addr:"العنوان",addrv:"محل، شارع النادي، القاسمية، الشارقة",wa:"واتساب / هاتف",online:"خدمة أونلاين متوفرة: أرسل مستنداتك عبر واتساب واستلم الملف النهائي بنفس الطريقة.",foot:"البراء لخدمات رجال الأعمال - خدمات، شارع النادي، القاسمية، الشارقة",ask:"اسأل عن السعر",order:"اطلب عبر واتساب",aed:"درهم",msg:"مرحباً البراء، أحتاج: ",hi:"مرحباً البراء، أريد الاستفسار عن خدماتكم.",btn:"English"}
+};
+function wa(t){return "https://wa.me/"+N+"?text="+encodeURIComponent(t)}
+function render(l){
+ var t=T[l],h=document.documentElement;
+ h.lang=l;h.dir=l==="ar"?"rtl":"ltr";
+ document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=t[e.dataset.i]});
+ document.getElementById("lang").textContent=t.btn;
+ document.getElementById("wa1").href=document.getElementById("wa2").href=wa(t.hi);
+ document.getElementById("grid").innerHTML=S.map(function(s){
+  var n=s[l][0];
+  var pr=s.p!==undefined?'<div class="price">'+s.p+' <small>'+t.aed+'</small></div>':'<div class="ask">'+t.ask+'</div>';
+  return '<div class="card"><h3>'+n+'</h3><p>'+s[l][1]+'</p>'+pr+'<a target="_blank" rel="noopener" href="'+wa(t.msg+n)+'">'+t.order+'</a></div>';
+ }).join("");
+ document.title=t.brand;
+}
+var cur="en";
+document.getElementById("lang").onclick=function(){cur=cur==="en"?"ar":"en";render(cur)};
+render(cur);
+</script>
+</body>
+</html>
